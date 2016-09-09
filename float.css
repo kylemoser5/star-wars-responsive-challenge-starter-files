@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 .row {
   max-width: 1000px;
@@ -18,16 +20,26 @@
 }
 
 
-.col-4, .col-12{
+.col-4, .col-12 {
   float: left;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
 }
 
-.col-4, .col-12{
+.col-4, .col-12 {
   width: 100%;
 }
 
 @media only screen and (min-width: 640px) {
 
+  .col-4 {
+    min-width: 33.33%;
+  }
+
+  .col-12 {
+    min-width: 100%;
+  }
+
 }
+
+  
